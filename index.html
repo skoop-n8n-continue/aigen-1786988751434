@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imo's Pizza Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="board">
+    <header class="topbar">
+      <div class="brand" aria-label="Imo's Pizza">
+        <span class="brand-imos">IMO'S</span><span class="brand-pizza">PIZZA</span>
+        <span class="brand-tagline">THE SQUARE BEYOND COMPARE</span>
+      </div>
+      <div class="header-message" id="headerMessage">ST. LOUIS STYLE PIZZA</div>
+      <div class="order-callout"><span>ORDER ONLINE</span><strong>IMOSPIZZA.COM</strong></div>
+    </header>
+
+    <section class="content page page-one" id="pageOne">
+      <div class="pizza-area">
+        <section class="menu-card pizza-menu">
+          <div class="section-heading"><h1>ST. LOUIS STYLE PIZZA</h1><span>THIN • CRISPY • DELICIOUS</span></div>
+          <div class="price-key"><span>SIZE</span><b>10&quot;</b><b>12&quot;</b><b>14&quot;</b><b>16&quot;</b></div>
+          <div class="pizza-grid" id="pizzaGrid"></div>
+          <div class="pizza-footer">
+            <div><b>BUILD YOUR OWN</b><span>Cheese pizza + toppings</span></div>
+            <div><b>ADDITIONAL TOPPINGS</b><span>$1.55 / $2.00 / $2.40 / $2.80</span></div>
+          </div>
+        </section>
+        <section class="feature-deal">
+          <div class="feature-stars">★ ★ ★</div>
+          <div class="feature-kicker">ST. LOUIS FAVORITE</div>
+          <div class="feature-title">THE<br>ORIGINAL<br>SQUARE</div>
+          <div class="feature-subtitle">MADE WITH PROVEL® CHEESE</div>
+          <div class="pizza-illustration"><span></span><span></span><span></span><span></span><span></span></div>
+          <p>Thin, crispy crust. Legendary flavor.</p>
+        </section>
+      </div>
+      <section class="bottom-cards">
+        <article class="menu-card combo-card">
+          <div class="section-heading"><h2>MEAL DEALS</h2><span>DINNER IS SERVED</span></div>
+          <div class="deal-row"><div><b>GREAT TASTES OF ST. LOUIS</b><span>Pizza, toasted ravioli &amp; more</span></div><strong>$27.99</strong></div>
+          <div class="deal-row"><div><b>SQUARE MEAL DEAL</b><span>Pizza, side &amp; drinks</span></div><strong>$27.99</strong></div>
+          <div class="deal-note">ASK ABOUT TODAY'S COMBO OPTIONS</div>
+        </article>
+        <article class="menu-card side-card">
+          <div class="section-heading"><h2>SIDES &amp; DRINKS</h2><span>PERFECT WITH PIZZA</span></div>
+          <div id="quickSides" class="quick-list"></div>
+        </article>
+      </section>
+    </section>
+
+    <section class="content page page-two" id="pageTwo" hidden>
+      <div class="page-two-grid">
+        <article class="menu-card tall-card">
+          <div class="section-heading"><h1>TOASTED SANDWICHES</h1><span>ALL SERVED HOT &amp; MELTY</span></div>
+          <div id="sandwiches" class="two-col-list"></div>
+          <div class="sandwich-note">CRISPY CHICKEN CLUB <strong>$9.40</strong></div>
+        </article>
+        <article class="menu-card tall-card pasta-card">
+          <div class="section-heading"><h1>PASTA</h1><span>HOMEMADE COMFORT</span></div>
+          <div id="pastas" class="large-list"></div>
+          <div class="pasta-art">✦</div>
+          <p class="menu-caption">Baked fresh and served with garlic bread.</p>
+        </article>
+        <article class="menu-card tall-card favorites-card">
+          <div class="section-heading"><h1>FAVORITES</h1><span>START, SHARE &amp; SNACK</span></div>
+          <div id="favorites" class="large-list"></div>
+        </article>
+      </div>
+      <div class="lower-page-two">
+        <article class="menu-card salad-card">
+          <div class="section-heading"><h2>SALADS</h2><span>SMALL / LARGE</span></div>
+          <div id="salads" class="salad-grid"></div>
+        </article>
+        <article class="menu-card sweets-card">
+          <div class="section-heading"><h2>SWEET FINISH</h2><span>DESSERTS</span></div>
+          <div id="desserts" class="quick-list desserts"></div>
+        </article>
+        <aside class="drink-poster"><div class="bubbles">● • ●</div><strong>ICE COLD<br>DRINKS</strong><span>FOUNTAIN • BOTTLED</span><div id="drinks"></div></aside>
+      </div>
+    </section>
+
+    <footer><span>PRICES SUBJECT TO CHANGE • TAX NOT INCLUDED</span><span class="page-label" id="pageLabel">PIZZA &amp; DEALS • 1 OF 2</span><span>THANK YOU FOR CHOOSING IMO'S</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
