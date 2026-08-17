@@ -1,0 +1,49 @@
+:root {
+  --ink: #163b35;
+  --cream: #fff9ea;
+  --paper: #f3ead1;
+  --coral: #ef633e;
+  --orange: #f4a33a;
+  --mint: #b9d7c4;
+  --blue: #478f9a;
+  --line: rgba(22, 59, 53, .25);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; background: #d8cdb5; }
+body { color: var(--ink); font-family: 'DM Sans', sans-serif; }
+#menu-board { min-height: 100vh; background: var(--cream); display: flex; flex-direction: column; overflow: hidden; }
+.top-stripe { height: 14px; flex: 0 0 14px; background: repeating-linear-gradient(135deg, var(--coral) 0 18px, var(--orange) 18px 36px, var(--mint) 36px 54px, var(--blue) 54px 72px); }
+.masthead { display: flex; align-items: center; justify-content: space-between; padding: clamp(14px, 2vw, 28px) clamp(20px, 4vw, 64px) clamp(10px, 1.5vw, 18px); border-bottom: 2px solid var(--ink); }
+.brand-lockup { line-height: .8; transform: rotate(-3deg); min-width: 170px; }
+.brand-mark { font: 800 clamp(2.2rem, 5vw, 5rem)/.8 Anton, sans-serif; letter-spacing: .04em; color: var(--coral); text-shadow: 2px 2px 0 var(--ink); }
+.brand-sub { margin-left: 26px; color: var(--ink); font: 800 clamp(.8rem, 1.4vw, 1.3rem)/1 'Barlow Condensed', sans-serif; letter-spacing: .34em; }
+.header-message { text-align: center; font-family: 'Barlow Condensed', sans-serif; font-size: clamp(1rem, 2vw, 1.8rem); font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+.eyebrow { display: block; font: 700 .75em/1 'Barlow Condensed', sans-serif; letter-spacing: .18em; }
+.header-message .eyebrow { color: var(--coral); margin-bottom: 5px; }
+.page-indicator { font: 700 clamp(1rem, 2vw, 1.4rem) 'Barlow Condensed', sans-serif; letter-spacing: .08em; min-width: 80px; text-align: right; }
+.page-indicator span { color: var(--coral); font-size: 1.3em; }
+.page-indicator i { font-style: normal; margin: 0 4px; opacity: .5; }
+.hero-band { background: var(--ink); color: var(--cream); display: flex; justify-content: space-between; align-items: end; gap: 3rem; padding: clamp(18px, 3vw, 34px) clamp(20px, 4vw, 64px); }
+.hero-band .eyebrow { color: var(--orange); margin-bottom: 9px; }
+h1 { margin: 0; font: 800 clamp(2rem, 5.4vw, 5.6rem)/.9 Anton, sans-serif; letter-spacing: .025em; color: var(--cream); }
+.hero-copy { max-width: 300px; color: #d8eee0; font-size: clamp(.85rem, 1.25vw, 1.15rem); line-height: 1.25; padding-bottom: 4px; }
+.menu-content { flex: 1; display: grid; grid-template-columns: 1.18fr .82fr; gap: clamp(16px, 3vw, 44px); padding: clamp(18px, 3vw, 42px) clamp(20px, 4vw, 64px); min-height: 0; }
+.menu-column { min-width: 0; }
+.menu-column + .menu-column { border-left: 2px solid var(--line); padding-left: clamp(16px, 3vw, 44px); }
+.category { margin-bottom: clamp(14px, 2vw, 28px); }
+.category-title { display: flex; align-items: center; gap: 12px; margin: 0 0 8px; font: 800 clamp(1.2rem, 2.6vw, 2.5rem)/1 Anton, sans-serif; letter-spacing: .04em; color: var(--coral); }
+.category-title::after { content: ''; height: 5px; flex: 1; background: var(--orange); transform: skew(-25deg); }
+.menu-item { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 12px; padding: 5px 0; border-bottom: 1px dotted var(--line); }
+.item-name { font: 700 clamp(.95rem, 1.55vw, 1.42rem)/1.05 'Barlow Condensed', sans-serif; text-transform: uppercase; letter-spacing: .02em; }
+.item-desc { display: block; font: 400 clamp(.65rem, .9vw, .85rem)/1.1 'DM Sans', sans-serif; text-transform: none; color: #54736b; margin-top: 2px; }
+.item-price { color: var(--ink); font: 800 clamp(1rem, 1.65vw, 1.55rem)/1 'Barlow Condensed', sans-serif; white-space: nowrap; }
+.size-row { display: flex; justify-content: end; gap: 12px; color: #52716a; font: 700 .64rem 'Barlow Condensed', sans-serif; text-transform: uppercase; margin: -3px 0 2px; }
+.badge { display: inline-block; margin-left: 6px; padding: 2px 5px; background: var(--orange); color: var(--ink); font: 800 .62rem 'Barlow Condensed', sans-serif; letter-spacing: .05em; vertical-align: middle; }
+.callout { background: var(--mint); padding: 18px; margin: 7px 0 20px; transform: rotate(1deg); border: 2px solid var(--ink); box-shadow: 5px 5px 0 var(--ink); }
+.callout strong { display: block; font: 800 clamp(1.35rem, 2.8vw, 2.8rem)/.9 Anton, sans-serif; text-transform: uppercase; }
+.callout p { margin: 8px 0 0; font: 600 clamp(.8rem, 1vw, 1rem)/1.2 'Barlow Condensed', sans-serif; text-transform: uppercase; }
+.footer-bar { display: flex; justify-content: space-between; align-items: center; gap: 15px; padding: 11px clamp(20px, 4vw, 64px); background: var(--orange); font: 700 clamp(.7rem, 1.1vw, 1rem) 'Barlow Condensed', sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+.footer-dot { display: inline-block; width: 10px; height: 10px; background: var(--coral); border-radius: 50%; }
+.page-dots { display: inline-flex; gap: 5px; vertical-align: middle; }.page-dots b { width: 9px; height: 9px; display: inline-block; border-radius: 50%; background: var(--ink); opacity: .35; }.page-dots b:first-child { opacity: 1; }
+@media (max-width: 720px) { .header-message { display: none; } .masthead { padding-right: 20px; } .menu-content { grid-template-columns: 1fr; overflow: visible; } .menu-column + .menu-column { border-left: 0; border-top: 2px solid var(--line); padding: 22px 0 0; } .footer-bar { flex-wrap: wrap; } }
+@media (max-height: 700px) and (min-width: 721px) { .masthead { padding-top: 10px; padding-bottom: 8px; } .hero-band { padding-top: 16px; padding-bottom: 16px; } .category { margin-bottom: 12px; } .menu-item { padding: 3px 0; } .callout { padding: 12px; margin-bottom: 12px; } }
